@@ -1,0 +1,152 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Alan}{AMOSSE}
+      {Ingénieur bioinformaticien}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Addresse}
+    La belle étoile
+    44630 Le Coudray
+    ~
+  \section{Tééphone}
+    0659447495
+    ~
+  \section{Mail \& Git}
+    \href{mailto:alan.amosse@gmail.com}{alan.amosse@gmail.com}
+    \href{https://github.com/Alanamosse}{github.com/Alanamosse}
+    ~
+  \section{Programmation}
+    Python
+    Bash
+    R
+    C/C++
+    Préférence d'OS : \textbf{GNU/Linux}
+   
+    %\includegraphics[scale=0.62]{img/programming.png}
+    ~
+%  \section{OS Preference}
+%    \textbf{GNU/Linux}\includegraphics[scale=0.40]{img/5stars.png}
+%    \textbf{Unix}\includegraphics[scale=0.40]{img/4stars.png}
+%    \textbf{MacOS}\includegraphics[scale=0.40]{img/2stars.png}
+%    \textbf{Windows}\includegraphics[scale=0.40]{img/1stars.png}
+%    ~
+  \section{Personal Skills}
+%    \includegraphics[scale=0.62]{img/personal.png}
+    Motivation
+    Organisation
+    Curiosité
+    Indépendance
+    ~
+\end{aside}
+
+\section{Expérience}
+\begin{entrylist}
+  \entry
+    {10/17 - Now}
+    {Ingénieur de développement}
+    {Muséum National d'Histoire Naturelle, Concarneau}
+    {Dévelopment d'outils d'analyses biologiques et statistiques pour intégration dans une plateforme web Galaxy. Travail en partenariat avec differentes équipes de recherche, mise à dispositions des scripts internes au labo.\\
+    Galaxy - Python - R - Bash - Openstack}
+    
+  \entry
+    {03/17 - 08/17}
+    {Stage bioinfromatique}
+    {Ifremer, Concarneau}
+    {Identification d'espèces de dinoflagellés indicatrices du changement global en utilisant des données de métabarcoding. Mise en place d'une base de donnée et d'une routine automatisée d'analyse. Caractérisation de la qualité des barcodes comme marqueurs de la biodiversité.\\
+    Python - Biopython - Bash}
+
+    \entry
+    {03/16 - 06/16}
+    {Stage bioinformatique}
+    {UFIP, Nantes}
+    {Mise en place d'une méthode de deep learning pour la classification de ligand en fonction de leur structure. Entrainement et optimisation d'une Machine de Boltzmann restreinte. Ajout de la méthode dans une plateforme web avec le framework django. Développement d'un parser pour la base ChEMBL-EBI.\\
+    Python - Scikit - Django}
+\end{entrylist}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2015 - 2017}
+    {Master de bioinformatique}
+    {Université de Nantes}
+    {Bioinformatique et biostatistiques. Traitement de données biologiques. Modélisation. Pharmacologie. Epidémiologie.\\
+    Programation. Base de données.}
+  \entry
+    {2014 - 2015}
+    {Master 1 biologie et technologie du végétal}
+    {Université d'Angers}
+    {Biologie des végétaux et Agronomie. Arret de la formation après le master 1 pour une réorientation en bioinformatique.}
+  \entry
+    {2011 - 2014}
+    {Licence de biologie biochimie}
+    {Université de Nantes}
+    {Licence générale, solides connaissances en biologie biochimie.\\}
+\end{entrylist}
+
+\section{Formation personnelle}
+\begin{entrylist}
+  \entry
+    {10/17 - Now}
+    {Machine learning et deep learning}
+    {Formation en ligne Udacity, tutoriels tensorflow et scikit. \\Classification d'images avec réseau de neuronnes à convolution. Transfer learning en réentrainant l'architecture InceptionV3 pour des nouvelles catégories.\\Concours ImageCLEF2017. CrowdAi, Kaggle.\\ Premiers tests de manipulation de fichier DICOM.\\}
+    Python - Tensorflow - Kera - GPU}
+\end{entrylist}
+
+\newpage
+
+\begin{aside}
+~
+~
+~
+  \section{Langues}
+    \textbf{Anglais} bon niveau oral et écrit.
+\end{aside}
+
+\section{Publications}
+\section{Other Info}
+\\
+\begin{flushleft}
+\emph{Juin 2018}
+\end{flushleft}
+\begin{flushright}
+\emph{Alan AMOSSE}
+\end{flushright}
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
+\end{document}
